@@ -1,0 +1,42 @@
+/* header contacts */
+.contact-group {
+  display: flex;
+  margin-left: auto;
+
+  &__item {
+  margin-right: var(--margin-right);
+
+  &:last-child {
+  margin-right: 0;
+}
+}
+  &__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+  &__icon {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+}
+.contact-group__link:hover .contact-group__icon,
+.contact-group__link:focus .contact-group__icon {
+  fill: var(--accent-color);
+}
