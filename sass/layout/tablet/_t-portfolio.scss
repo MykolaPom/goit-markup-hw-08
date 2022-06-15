@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter__list {
+    justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: var(--mob-tab-margin-bottom);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .filter__item {
+      margin-right: 8px;
+      margin-bottom: 0;
+      padding: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .cards-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+
+      .card__item {
+        display: block;
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+      }
+    }
+
+    .card__link {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card__description {
+      flex-grow: 1;
+    }
+
+    .card__overlay {
+      top: 1px;
+    }
+  }
+}

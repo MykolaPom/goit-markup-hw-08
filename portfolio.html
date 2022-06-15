@@ -15,27 +15,82 @@
 <body>
 	<header class="header">
 		<div class="container header__container">
-			<a class="logo" href="./index.html" lang="en">Web<span class="logo__black">Studio</span>
+			<div class="mobile">
+				<a class="logo" href="./index.html" lang="en">Web<span class="logo__black">Studio</span>
 			</a>
-		<nav>
+			<button class="mobile__menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+				<svg class="mobile__menu-icon" width="40" height="40" aria-label="mobile menu switcher">
+					<use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+					<use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+				</svg>
+			</button>
+<!-- Mobile menu -->
+		<nav class="mobile-navigation">
+			<div class="mobile-menu" id="mobile-menu" aria-expanded="false" data-menu>
+				<ul class="mobile-menu__nav">
+					<li class="mobile-menu__item-nav">
+						<a class="mobile-menu__link-nav mobile-menu__link-nav" href="./index.html">Студия</a>
+					</li>
+					<li class="mobile-menu__item-nav">
+						<a class="mobile-menu__link-nav mobile-menu__link-nav--current" href="./portfolio.html">Портфолио</a>
+					</li>
+					<li class="mobile-menu__item-nav">
+						<a class="mobile-menu__link-nav" href="/">Контакты</a>
+					</li>
+				</ul>
+
+				<ul class="mobile-menu__contacts">
+					<li class="mobile-menu__item-contacts"><a href="tel:+380961111111" class="mobile-menu__link-contacts--accent">+38 096 111 11 11</a>
+					</li>
+					<li class="mobile-menu__item-contacts"><a href="mailto:info@devstudio.com" class="mobile-menu__link-contacts">info@devstudio.com</a>
+					</li>
+				</ul>
+				
+				<ul class="mobile-menu__socials">
+					<li class="mobile-menu__item-social">
+						<a href="/" class="mobile-menu__link-social" target="_blank"
+						rel="noopener noreferrer">Instagram</a>
+					</li>
+					<li class="mobile-menu__item-social">
+						<a href="/" class="mobile-menu__link-social" target="_blank"
+						rel="noopener noreferrer">Twitter</a>
+					</li>
+					<li class="mobile-menu__item-social">
+						<a href="/" class="mobile-menu__link-social" target="_blank"
+						rel="noopener noreferrer">Facebook</a>
+					</li>
+					<li class="mobile-menu__item-social">
+						<a href="/" class="mobile-menu__link-social" target="_blank"
+						rel="noopener noreferrer">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+			</div>
+
+<div class="nav-container">
+			<nav>
 			<ul class="navigation-list">
 					<li class="navigation-list__item"><a class="navigation-list__link" href="./index.html">Студия</a></li>
 					<li class="navigation-list__item"><a class="navigation-list__link navigation-list__link--current" href="./portfolio.html">Портфолио</a></li>
 					<li class="navigation-list__item"><a class="navigation-list__link" href="">Контакты</a></li>
 			</ul>
 		</nav>
+
+</div>
 			<ul class="contact-group">
 				<li class="contact-group__item"><a class="contact-group__link" href="mailto:info@devstudio.com">
-					<svg class="contact-group__icon" width="16" height="12"> 
+					<svg class="contact-group__icon contact-group__icon--tablet-env" width="16" height="12"> 
 						<use href="./images/icons.svg#icon-envelope"></use>
 					</svg>
 					info@devstudio.com</a></li>
 				<li class="contact-group__item"><a class="contact-group__link" href="tel:+380961111111">
-					<svg class="contact-group__icon" width="10" height="16">
+					<svg class="contact-group__icon contact-group__icon--tablet-phone" width="10" height="16">
 						<use href="./images/icons.svg#icon-smartphone"></use>
 					</svg>
 					+38 096 111 11 11</a></li>
 			</ul>
+
 		</div>
 	</header>
 
@@ -67,7 +122,22 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/web-site-1.jpg" alt="web-site-techno" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/web-site-1-450.jpg 1x, ./images/portfolio/web-site-1-450@2x.jpg 2x" 
+            media="(min-width: 480px)" 
+            />
+            <source
+            srcset="./images/portfolio/web-site-1-354.jpg 1x, ./images/portfolio/web-site-1-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/web-site-1-370.jpg 1x, ./images/portfolio/web-site-1-370@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+            />
+            <img src="./images/portfolio/web-site-1-370.jpg" alt="web-site-techno">
+          </picture>
+
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -84,7 +154,21 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/design-1.jpg" alt="poster" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/design-1-450.jpg 1x, ./images/portfolio/design-1-450@2x.jpg 2x" 
+            media="(min-width: 480px)" 
+            />
+            <source
+            srcset="./images/portfolio/design-1-354.jpg 1x, ./images/portfolio/design-1-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/design-1-370.jpg 1x, ./images/portfolio/design-1-370@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+            />
+            <img src="./images/portfolio/design-1-370.jpg" alt="web-site-techno">
+          </picture>
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -101,7 +185,21 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/app-seafood.jpg" alt="app-seafood" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/app-seafood-450.jpg 1x, ./images/portfolio/app-seafood-450@2x.jpg 2x" 
+            media="(min-width: 480px)"
+            />
+            <source
+            srcset="./images/portfolio/app-seafood-354.jpg 1x, ./images/portfolio/app-seafood-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/app-seafood-370.jpg 1x, ./images/portfolio/app-seafood-370@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+            />
+            <img src="./images/portfolio/app-seafood-370.jpg" alt="web-site-techno">
+          </picture>
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -118,7 +216,21 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/marketing.jpg" alt="project-prime" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/marketing-450.jpg 1x, ./images/portfolio/marketing-450@2x.jpg 2x" 
+            media="(min-width: 480px)" 
+            />
+            <source
+            srcset="./images/portfolio/marketing-354.jpg 1x, ./images/portfolio/marketing-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/marketing-370.jpg 1x, ./images/portfolio/marketing-370@2x.jpg 2x" 
+            media="(min-width: 1200px)"
+            />
+            <img src="./images/portfolio/marketing-370.jpg" alt="web-site-techno">
+          </picture>
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -136,7 +248,21 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/app-boxes.jpg" alt="app-boxes" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/app-boxes-450.jpg 1x, ./images/portfolio/app-boxes-450@2x.jpg 2x" 
+            media="(min-width: 480px)" 
+            />
+            <source
+            srcset="./images/portfolio/app-boxes-354.jpg 1x, ./images/portfolio/app-boxes-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/app-boxes-370.jpg 1x, ./images/portfolio/app-boxes-370@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+            />
+            <img src="./images/portfolio/app-boxes-370.jpg" alt="web-site-techno">
+          </picture>
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -154,7 +280,21 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/web-site-2.jpg" alt="web-site-inspiration" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/web-site-2-450.jpg 1x, ./images/portfolio/web-site-2-450@2x.jpg 2x" 
+            media="(min-width: 480px)" 
+            />
+            <source
+            srcset="./images/portfolio/web-site-2-354.jpg 1x, ./images/portfolio/web-site-2-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/web-site-2-370.jpg 1x, ./images/portfolio/web-site-2-370@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+            />
+            <img src="./images/portfolio/web-site-2-370.jpg" alt="web-site-techno">
+          </picture>
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -172,7 +312,21 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/design-2.jpg" alt="design-edition" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/design-2-450.jpg 1x, ./images/portfolio/design-2-450@2x.jpg 2x" 
+            media="(min-width: 480px)" 
+            />
+            <source
+            srcset="./images/portfolio/design-2-354.jpg 1x, ./images/portfolio/design-2-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/design-2-370.jpg 1x, ./images/portfolio/design-2-370@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+            />
+            <img src="./images/portfolio/design-2-370.jpg" alt="web-site-techno">
+          </picture>
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -190,7 +344,21 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/marketing-lab.jpg" alt="project-lab" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/marketing-lab-450.jpg 1x, ./images/portfolio/marketing-lab-450@2x.jpg 2x" 
+            media="(min-width: 480px)" 
+            />
+            <source
+            srcset="./images/portfolio/marketing-lab-354.jpg 1x, ./images/portfolio/marketing-lab-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/marketing-lab-370.jpg 1x, ./images/portfolio/marketing-lab-370@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+            />
+            <img src="./images/portfolio/marketing-lab-370.jpg" alt="web-site-techno">
+          </picture>
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -208,7 +376,21 @@
     <li class="card__item">
       <a class="card__link" href="">
         <div class="card__thumb">
-          <img src="./images/portfolio/app-gb.jpg" alt="app-gb" width="370" height="294">
+          <picture>
+            <source
+            srcset="./images/portfolio/app-gb-450.jpg 1x, ./images/portfolio/app-gb-450@2x.jpg 2x" 
+            media="(min-width: 480px)" 
+            />
+            <source
+            srcset="./images/portfolio/app-gb-354.jpg 1x, ./images/portfolio/app-gb-354@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+            />
+            <source
+            srcset="./images/portfolio/app-gb-370.jpg 1x, ./images/portfolio/app-gb-370@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+            />
+            <img src="./images/portfolio/app-gb-370.jpg" alt="web-site-techno">
+          </picture>
           <div class="card__overlay">
             <p class="card__text-overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -227,74 +409,94 @@
 </section>
 </main>
 
-<!-- Footer -->
-<footer class="footer">
-	<div class="container footer-container">
-<div class="footer-container__left-side">
-		<a class="footer-container__logo" href="./index.html" lang="en">Web<span class="footer-container__logo footer-container__logo--white">Studio</span></a>
-		<address class="footer-container__address">
-			<ul class="footer-container__list list">
-				<li class="footer-container__item-map">
-					<a class="footer-container__link-map" href="https://goo.gl/maps/NUQyk9xULY4GFTw99" target="_blank"
-						rel="noopener noreferrer">г. Киев, пр-т Леси
-						Украинки, 26</a>
-				</li>
-				<li class="footer-container__item-contact">
-					<a class="footer-container__link" href="mailto:info@devstudio.com">info@example.com</a>
-				</li>
-				<li class="footer-container__item-contact">
-					<a class="footer-container__link" href="tel:+380961111111">+38 096 111 11 11</a>
-				</li>
-			</ul>
-		</address>
-</div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <!-- Logo, address and contacts -->
+        <div class="footer__contacts-box">
+          <a class="footer-container__logo" href="./index.html" lang="en"
+            >Web<span class="footer-container__logo footer-container__logo--white">Studio</span></a
+          >
+          <address class="footer-container__address">
+            <ul class="footer-container__list">
+              <li class="footer-container__item-map">
+                <a
+                  class="footer-container__link-map"
+                  href="https://goo.gl/maps/NUQyk9xULY4GFTw99"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-container__item-contact">
+                <a class="footer-container__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-container__item-contact">
+                <a class="footer-container__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
 
-<div class="follow-us">
-	<h3 class="follow-us__title">присоединяйтесь</h3>
-					<ul class="follow-us__socials-list">
-						<li class="follow-us__socials-item">
-							<a class="follow-us__link" href="" aria-label="Instagram-logo">
-								<svg class="follow-us__icon follow-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a></li>
-						<li class="follow-us__socials-item">
-							<a class="follow-us__link" href="" aria-label="Twitter-logo">
-								<svg class="follow-us__icon follow-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a></li>
-						<li class="follow-us__socials-item">
-							<a class="follow-us__link" href="" aria-label="Facebook-logo">
-								<svg class="follow-us__icon follow-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a></li>
-						<li class="follow-us__socials-item">
-							<a class="follow-us__link" href="" aria-label="LinkedIn-logo">
-								<svg class="follow-us__icon follow-icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a></li>
-					</ul>
-</div>
-
-<!-- Subscription-form -->
-<div class="form-container">
-	<form name="form" autocomplete="off">
-		<label class="form__title" for="subscribe">Подпишитесь на рассылку</label>
-			<div class="form__field">
-				<input class="form__input" type="email" name="subscribe" placeholder="E-mail" id="subscribe" autocomplete="off">
-					<button class="form__btn" type="submit">Подписаться
-							<svg class="form__icon" width="24" height="24">
-								<use href="./images/icons.svg#icon-send"></use>
-							</svg>
-					</button>
-			</div>
-	</form>
-</div>
-
-	</div>
-</footer>
+        <!-- Follow-us -->
+        <div class="follow-us-box">
+          <h3 class="follow-us-box__title">присоединяйтесь</h3>
+          <ul class="follow-us-box__socials-list">
+            <li class="follow-us-box__socials-item">
+              <a class="follow-us-box__link" href="" aria-label="Instagram-logo">
+                <svg class="follow-us-box__icon follow-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow-us-box__socials-item">
+              <a class="follow-us-box__link" href="" aria-label="Twitter-logo">
+                <svg class="follow-us-box__icon follow-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow-us-box__socials-item">
+              <a class="follow-us-box__link" href="" aria-label="Facebook-logo">
+                <svg class="follow-us-box__icon follow-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow-us-box__socials-item">
+              <a class="follow-us-box__link" href="" aria-label="LinkedIn-logo">
+                <svg class="follow-us-box__icon follow-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+<!-- Footer subscription form -->
+        <form class="footer__form" name="form" autocomplete="off">
+          <label class="footer__form-title" for="subscribe">Подпишитесь на рассылку</label>
+          <div class="footer__form-field">
+          <input
+            class="footer__form-input"
+            type="email"
+            name="subscribe"
+            placeholder="E-mail"
+            id="subscribe"
+            autocomplete="off"
+          />
+          <button class="footer__form-btn" type="submit">
+            Подписаться
+            <svg class="footer__form-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+<!-- Script -->
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 768px;
+      margin-left: calc(-1 * var(--mobile-gap));
+      margin-top: calc(-1 * var(--mobile-gap));
+  
+      &__item {
+        width: 226px;
+        height: 92px;
+        flex-basis: calc(100% / 3 - var(--mobile-gap));
+        margin-left: var(--mobile-gap);
+        margin-top: var(--mobile-gap);
+      }
+}
+}

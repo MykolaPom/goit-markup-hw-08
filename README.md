@@ -1,6 +1,3 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
 What's new?
-- BEM methodology applied;
-- code refactoring performed;
-- SASS integrated and css files have been substituted by scss files.

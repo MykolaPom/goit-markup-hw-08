@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    margin-left: calc(-1 * var(--mobile-gap));
+    margin-top: calc(-1 * var(--mobile-gap));
+
+    &__item {
+      flex-basis: calc(100% / 2 - var(--mobile-gap));
+      margin-left: var(--mobile-gap);
+      margin-top: var(--mobile-gap);
+
+      &:nth-child(-n+4) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

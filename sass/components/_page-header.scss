@@ -1,26 +1,15 @@
-/* header */
+// // /* header */
 
-.header {
-  border-bottom: 1px solid var(--border-color);
-}
+@media screen and (min-width: 1200px) {
 
-.logo {
-  color: var(--accent-color);
-  font-family: var(--logo-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-right: 93px;
-}
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
 
-.logo__black {
-  color: var(--main-text-color);
-  margin-right: 0;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
 }

@@ -13,3 +13,26 @@
 @import "./components/footer-section";
 @import "./components/portfolio-filters";
 @import "./components/portfolio-cards";
+@import "./utils/mixins";
+
+// mobile
+@import "./layout/mobile/m-header";
+@import "./layout/mobile/mobile-menu";
+@import "./layout/mobile/m-hero";
+@import "./layout/mobile/m-advantages";
+@import "./layout/mobile/m-team";
+@import "./layout/mobile/m-clients";
+@import "./layout/mobile/m-footer";
+@import "./layout/mobile/m-portfolio";
+@import "./layout/mobile/m-portfolio-cards";
+
+// tablet
+@import "./layout/tablet/t-header";
+@import "./layout/tablet/t-navigation";
+@import "./layout/tablet/t-contacts";
+@import "./layout/tablet/t-hero";
+@import "./layout/tablet/t-advantages";
+@import "./layout/tablet/t-team";
+@import "./layout/tablet/t-clients";
+@import "./layout/tablet/t-footer";
+@import "./layout/tablet/t-portfolio";
