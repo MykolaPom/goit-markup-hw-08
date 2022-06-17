@@ -13,6 +13,9 @@
       flex-basis: calc(100% / 3 - var(--cards-list-gap));
       margin-left: var(--cards-list-gap);
       margin-top: var(--cards-list-gap);
+      // flex-basis: calc((100% - 60px) / 3);
+      // margin-right: 30px;
+      // margin-bottom: 30px;
     }
     }
   

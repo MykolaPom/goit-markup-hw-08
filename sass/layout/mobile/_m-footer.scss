@@ -24,10 +24,6 @@
   }
 
   &__address {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 60px;
-    }
-
     margin-top: 20px;
   }
 
@@ -68,8 +64,14 @@
   }
 }
 
+.footer__contacts-box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
 .follow-us-box {
-  @media screen and (max-width:1199px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 }
@@ -130,7 +132,7 @@
     margin-bottom: 20px;
     max-width: 450px;
   }
- 
+
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;

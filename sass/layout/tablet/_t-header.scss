@@ -3,10 +3,14 @@
     width: 768px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .mobile {
+    margin-right: 88px;
   }
 
   .logo {
-    margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
   }

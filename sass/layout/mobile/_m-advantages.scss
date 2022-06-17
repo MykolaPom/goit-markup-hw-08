@@ -2,41 +2,45 @@
   @media screen and (max-width: 767px) {
     max-width: 450px;
   }
+
+  @media screen and (max-width: 1199px) {
     &__item:not(:last-child) {
       margin-bottom: 30px;
     }
-    
-    &__box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 120px;
-      max-width: 450px;
-      width: 100%;
-      background-color: var(--bg-color-light);
-      border-radius: 4px;
-      margin: 0;
-    }
-    &__title {
-  @media screen and (max-width: 767px) {
-    text-align: center;
   }
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      margin-top: 30px;
-      margin-bottom: 10px;
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    max-width: 450px;
+    width: 100%;
+    background-color: var(--bg-color-light);
+    border-radius: 4px;
+    margin: 0;
+  }
+
+  &__title {
+    @media screen and (max-width: 767px) {
+      text-align: center;
     }
-    &__text {
-      color: var(--secondary-text-color);
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      margin-bottom: 0;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--secondary-text-color);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  
-}
+@media screen and (min-width: 480px) and (max-width: 767px) {}
